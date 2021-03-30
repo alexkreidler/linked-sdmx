@@ -1,0 +1,26 @@
+<https://data.loqu.dev/WB/provenance/activity/20210329193305> a <http://www.w3.org/ns/prov#Activity>;
+    <http://www.w3.org/2000/01/rdf-schema#label> "Transformed WDI data"@en;
+    <http://www.w3.org/ns/prov#startedAtTime> "2021-03-29T19:33:05Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://www.w3.org/ns/prov#wasStartedBy> <http://csarven.ca/#i>;
+    <http://www.w3.org/ns/prov#wasAssociatedWith> <https://github.com/csarven/linked-sdmx>;
+    <http://www.w3.org/ns/prov#qualifiedAssociation> <http://csarven.ca/linked-sdmx-data>;
+    <http://www.w3.org/ns/prov#used> <http://example.org/data/WB.KeyFamily.xml>.
+<http://example.org/data/WB.KeyFamily.xml> a <http://www.w3.org/ns/prov#Entity>.
+<https://data.loqu.dev/WB/provenance/activity/20210329193305> <http://www.w3.org/ns/prov#qualifiedUsage> _:df_0_1.
+_:df_0_1 a <http://www.w3.org/ns/prov#Usage>;
+    <http://www.w3.org/ns/prov#entity> <http://example.org/data/WB.KeyFamily.xml>;
+    <http://www.w3.org/ns/prov#atTime> "2021-03-29T19:33:05Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>.
+<https://data.loqu.dev/WB/provenance/activity/20210329193305> <http://www.w3.org/ns/prov#generated> <http://wb.270a.info/structure/1.0/WDI>.
+<http://wb.270a.info/structure/1.0/WDI> a <http://www.w3.org/ns/prov#Entity>;
+    <http://www.w3.org/ns/prov#wasAttributedTo> <http://csarven.ca/#i>;
+    <http://www.w3.org/ns/prov#generatedAtTime> "2021-03-29T19:33:05Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://www.w3.org/ns/prov#wasDerivedFrom> <http://example.org/data/WB.KeyFamily.xml>;
+    <http://www.w3.org/ns/prov#wasGeneratedBy> <https://data.loqu.dev/WB/provenance/activity/20210329193305>;
+    <http://purl.org/dc/terms/license> <http://creativecommons.org/publicdomain/zero/1.0/>;
+    <http://purl.org/dc/terms/issued> "2021-03-29T19:33:05Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://purl.org/dc/terms/creator> <http://csarven.ca/#i>;
+    a <http://purl.org/linked-data/sdmx#DataStructureDefinition>, <http://purl.org/linked-data/cube#DataStructureDefinition>;
+    <http://purl.org/linked-data/sdmx/2009/concept#dsi> "WDI";
+    <http://purl.org/linked-data/sdmx/2009/concept#mAgency> "WB";
+    <http://www.w3.org/2002/07/owl#versionInfo> "1.0";
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "World Development Indicators"@en
