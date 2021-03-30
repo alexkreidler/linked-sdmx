@@ -1,0 +1,1227 @@
+{
+  "Structure": {
+    "-common": "http://www.SDMX.org/resources/SDMXML/schemas/v2_0/common",
+    "-compact": "http://www.SDMX.org/resources/SDMXML/schemas/v2_0/compact",
+    "-cross": "http://www.SDMX.org/resources/SDMXML/schemas/v2_0/cross",
+    "-generic": "http://www.SDMX.org/resources/SDMXML/schemas/v2_0/generic",
+    "-query": "http://www.SDMX.org/resources/SDMXML/schemas/v2_0/query",
+    "-schemaLocation": "http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message SDMXMessage.xsd",
+    "-structure": "http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure",
+    "-utility": "http://www.SDMX.org/resources/SDMXML/schemas/v2_0/utility",
+    "-xmlns": "http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message",
+    "-xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "CodeLists": {
+      "CodeList": [
+        {
+          "-agencyID": "EUROSTAT",
+          "-id": "CL_INDIC_DE",
+          "-isFinal": "false",
+          "Code": {
+            "-value": "JAN",
+            "Description": [
+              {
+                "#text": "Population on 1 January - total",
+                "-lang": "en"
+              },
+              {
+                "#text": "Bevölkerung am 1. Januar - insgesamt",
+                "-lang": "de"
+              },
+              {
+                "#text": "Population au 1er janvier - totale",
+                "-lang": "fr"
+              }
+            ]
+          },
+          "Name": [
+            {
+              "#text": "Demographic indicator",
+              "-lang": "en"
+            },
+            {
+              "#text": "Demographische Indikator",
+              "-lang": "de"
+            },
+            {
+              "#text": "Indicateur démographique",
+              "-lang": "fr"
+            }
+          ]
+        },
+        {
+          "-agencyID": "EUROSTAT",
+          "-id": "CL_GEO",
+          "-isFinal": "false",
+          "Code": [
+            {
+              "-value": "EU27",
+              "Description": [
+                {
+                  "#text": "European Union (27 countries)",
+                  "-lang": "en"
+                },
+                {
+                  "#text": "Europäische Union (27 Länder)",
+                  "-lang": "de"
+                },
+                {
+                  "#text": "Union européenne (27 pays)",
+                  "-lang": "fr"
+                }
+              ]
+            },
+            {
+              "-value": "EA17",
+              "Description": [
+                {
+                  "#text": "Euro area (17 countries)",
+                  "-lang": "en"
+                },
+                {
+                  "#text": "Euroraum (17 Länder)",
+                  "-lang": "de"
+                },
+                {
+                  "#text": "Zone euro (17 pays)",
+                  "-lang": "fr"
+                }
+              ]
+            },
+            {
+              "-value": "EA16",
+              "Description": [
+                {
+                  "#text": "Euro area (16 countries)",
+                  "-lang": "en"
+                },
+                {
+                  "#text": "Euroraum (16 Länder)",
+                  "-lang": "de"
+                },
+                {
+                  "#text": "Zone euro (16 pays)",
+                  "-lang": "fr"
+                }
+              ]
+            },
+            {
+              "-value": "BE",
+              "Description": [
+                {
+                  "#text": "Belgium",
+                  "-lang": "en"
+                },
+                {
+                  "#text": "Belgien",
+                  "-lang": "de"
+                },
+                {
+                  "#text": "Belgique",
+                  "-lang": "fr"
+                }
+              ]
+            },
+            {
+              "-value": "BG",
+              "Description": [
+                {
+                  "#text": "Bulgaria",
+                  "-lang": "en"
+                },
+                {
+                  "#text": "Bulgarien",
+                  "-lang": "de"
+                },
+                {
+                  "#text": "Bulgarie",
+                  "-lang": "fr"
+                }
+              ]
+            },
+            {
+              "-value": "CZ",
+              "Description": [
+                {
+                  "#text": "Czech Republic",
+                  "-lang": "en"
+                },
+                {
+                  "#text": "Tschechische Republik",
+                  "-lang": "de"
+                },
+                {
+                  "#text": "République tchèque",
+                  "-lang": "fr"
+                }
+              ]
+            },
+            {
+              "-value": "DK",
+              "Description": [
+                {
+                  "#text": "Denmark",
+                  "-lang": "en"
+                },
+                {
+                  "#text": "Dänemark",
+                  "-lang": "de"
+                },
+                {
+                  "#text": "Danemark",
+                  "-lang": "fr"
+                }
+              ]
+            },
+            {
+              "-value": "DE",
+              "Description": [
+                {
+                  "#text": "Germany (including  former GDR from 1991)",
+                  "-lang": "en"
+                },
+                {
+                  "#text": "Deutschland (einschließlich der ehemaligen DDR seit 1991)",
+                  "-lang": "de"
+                },
+                {
+                  "#text": "Allemagne (incluant l\u0026apos;ancienne RDA à partir de 1991)",
+                  "-lang": "fr"
+                }
+              ]
+            },
+            {
+              "-value": "EE",
+              "Description": [
+                {
+                  "#text": "Estonia",
+                  "-lang": "en"
+                },
+                {
+                  "#text": "Estland",
+                  "-lang": "de"
+                },
+                {
+                  "#text": "Estonie",
+                  "-lang": "fr"
+                }
+              ]
+            },
+            {
+              "-value": "IE",
+              "Description": [
+                {
+                  "#text": "Ireland",
+                  "-lang": "en"
+                },
+                {
+                  "#text": "Irland",
+                  "-lang": "de"
+                },
+                {
+                  "#text": "Irlande",
+                  "-lang": "fr"
+                }
+              ]
+            },
+            {
+              "-value": "EL",
+              "Description": [
+                {
+                  "#text": "Greece",
+                  "-lang": "en"
+                },
+                {
+                  "#text": "Griechenland",
+                  "-lang": "de"
+                },
+                {
+                  "#text": "Grèce",
+                  "-lang": "fr"
+                }
+              ]
+            },
+            {
+              "-value": "ES",
+              "Description": [
+                {
+                  "#text": "Spain",
+                  "-lang": "en"
+                },
+                {
+                  "#text": "Spanien",
+                  "-lang": "de"
+                },
+                {
+                  "#text": "Espagne",
+                  "-lang": "fr"
+                }
+              ]
+            },
+            {
+              "-value": "FR",
+              "Description": [
+                {
+                  "#text": "France",
+                  "-lang": "en"
+                },
+                {
+                  "#text": "Frankreich",
+                  "-lang": "de"
+                },
+                {
+                  "#text": "France",
+                  "-lang": "fr"
+                }
+              ]
+            },
+            {
+              "-value": "IT",
+              "Description": [
+                {
+                  "#text": "Italy",
+                  "-lang": "en"
+                },
+                {
+                  "#text": "Italien",
+                  "-lang": "de"
+                },
+                {
+                  "#text": "Italie",
+                  "-lang": "fr"
+                }
+              ]
+            },
+            {
+              "-value": "CY",
+              "Description": [
+                {
+                  "#text": "Cyprus",
+                  "-lang": "en"
+                },
+                {
+                  "#text": "Zypern",
+                  "-lang": "de"
+                },
+                {
+                  "#text": "Chypre",
+                  "-lang": "fr"
+                }
+              ]
+            },
+            {
+              "-value": "LV",
+              "Description": [
+                {
+                  "#text": "Latvia",
+                  "-lang": "en"
+                },
+                {
+                  "#text": "Lettland",
+                  "-lang": "de"
+                },
+                {
+                  "#text": "Lettonie",
+                  "-lang": "fr"
+                }
+              ]
+            },
+            {
+              "-value": "LT",
+              "Description": [
+                {
+                  "#text": "Lithuania",
+                  "-lang": "en"
+                },
+                {
+                  "#text": "Litauen",
+                  "-lang": "de"
+                },
+                {
+                  "#text": "Lituanie",
+                  "-lang": "fr"
+                }
+              ]
+            },
+            {
+              "-value": "LU",
+              "Description": [
+                {
+                  "#text": "Luxembourg",
+                  "-lang": "en"
+                },
+                {
+                  "#text": "Luxemburg",
+                  "-lang": "de"
+                },
+                {
+                  "#text": "Luxembourg",
+                  "-lang": "fr"
+                }
+              ]
+            },
+            {
+              "-value": "HU",
+              "Description": [
+                {
+                  "#text": "Hungary",
+                  "-lang": "en"
+                },
+                {
+                  "#text": "Ungarn",
+                  "-lang": "de"
+                },
+                {
+                  "#text": "Hongrie",
+                  "-lang": "fr"
+                }
+              ]
+            },
+            {
+              "-value": "MT",
+              "Description": [
+                {
+                  "#text": "Malta",
+                  "-lang": "en"
+                },
+                {
+                  "#text": "Malta",
+                  "-lang": "de"
+                },
+                {
+                  "#text": "Malte",
+                  "-lang": "fr"
+                }
+              ]
+            },
+            {
+              "-value": "NL",
+              "Description": [
+                {
+                  "#text": "Netherlands",
+                  "-lang": "en"
+                },
+                {
+                  "#text": "Niederlande",
+                  "-lang": "de"
+                },
+                {
+                  "#text": "Pays-Bas",
+                  "-lang": "fr"
+                }
+              ]
+            },
+            {
+              "-value": "AT",
+              "Description": [
+                {
+                  "#text": "Austria",
+                  "-lang": "en"
+                },
+                {
+                  "#text": "Österreich",
+                  "-lang": "de"
+                },
+                {
+                  "#text": "Autriche",
+                  "-lang": "fr"
+                }
+              ]
+            },
+            {
+              "-value": "PL",
+              "Description": [
+                {
+                  "#text": "Poland",
+                  "-lang": "en"
+                },
+                {
+                  "#text": "Polen",
+                  "-lang": "de"
+                },
+                {
+                  "#text": "Pologne",
+                  "-lang": "fr"
+                }
+              ]
+            },
+            {
+              "-value": "PT",
+              "Description": [
+                {
+                  "#text": "Portugal",
+                  "-lang": "en"
+                },
+                {
+                  "#text": "Portugal",
+                  "-lang": "de"
+                },
+                {
+                  "#text": "Portugal",
+                  "-lang": "fr"
+                }
+              ]
+            },
+            {
+              "-value": "RO",
+              "Description": [
+                {
+                  "#text": "Romania",
+                  "-lang": "en"
+                },
+                {
+                  "#text": "Rumänien",
+                  "-lang": "de"
+                },
+                {
+                  "#text": "Roumanie",
+                  "-lang": "fr"
+                }
+              ]
+            },
+            {
+              "-value": "SI",
+              "Description": [
+                {
+                  "#text": "Slovenia",
+                  "-lang": "en"
+                },
+                {
+                  "#text": "Slowenien",
+                  "-lang": "de"
+                },
+                {
+                  "#text": "Slovénie",
+                  "-lang": "fr"
+                }
+              ]
+            },
+            {
+              "-value": "SK",
+              "Description": [
+                {
+                  "#text": "Slovakia",
+                  "-lang": "en"
+                },
+                {
+                  "#text": "Slowakei",
+                  "-lang": "de"
+                },
+                {
+                  "#text": "Slovaquie",
+                  "-lang": "fr"
+                }
+              ]
+            },
+            {
+              "-value": "FI",
+              "Description": [
+                {
+                  "#text": "Finland",
+                  "-lang": "en"
+                },
+                {
+                  "#text": "Finnland",
+                  "-lang": "de"
+                },
+                {
+                  "#text": "Finlande",
+                  "-lang": "fr"
+                }
+              ]
+            },
+            {
+              "-value": "SE",
+              "Description": [
+                {
+                  "#text": "Sweden",
+                  "-lang": "en"
+                },
+                {
+                  "#text": "Schweden",
+                  "-lang": "de"
+                },
+                {
+                  "#text": "Suède",
+                  "-lang": "fr"
+                }
+              ]
+            },
+            {
+              "-value": "UK",
+              "Description": [
+                {
+                  "#text": "United Kingdom",
+                  "-lang": "en"
+                },
+                {
+                  "#text": "Vereinigtes Königreich",
+                  "-lang": "de"
+                },
+                {
+                  "#text": "Royaume-Uni",
+                  "-lang": "fr"
+                }
+              ]
+            },
+            {
+              "-value": "IS",
+              "Description": [
+                {
+                  "#text": "Iceland",
+                  "-lang": "en"
+                },
+                {
+                  "#text": "Island",
+                  "-lang": "de"
+                },
+                {
+                  "#text": "Islande",
+                  "-lang": "fr"
+                }
+              ]
+            },
+            {
+              "-value": "LI",
+              "Description": [
+                {
+                  "#text": "Liechtenstein",
+                  "-lang": "en"
+                },
+                {
+                  "#text": "Liechtenstein",
+                  "-lang": "de"
+                },
+                {
+                  "#text": "Liechtenstein",
+                  "-lang": "fr"
+                }
+              ]
+            },
+            {
+              "-value": "NO",
+              "Description": [
+                {
+                  "#text": "Norway",
+                  "-lang": "en"
+                },
+                {
+                  "#text": "Norwegen",
+                  "-lang": "de"
+                },
+                {
+                  "#text": "Norvège",
+                  "-lang": "fr"
+                }
+              ]
+            },
+            {
+              "-value": "CH",
+              "Description": [
+                {
+                  "#text": "Switzerland",
+                  "-lang": "en"
+                },
+                {
+                  "#text": "Schweiz",
+                  "-lang": "de"
+                },
+                {
+                  "#text": "Suisse",
+                  "-lang": "fr"
+                }
+              ]
+            },
+            {
+              "-value": "ME",
+              "Description": [
+                {
+                  "#text": "Montenegro",
+                  "-lang": "en"
+                },
+                {
+                  "#text": "Montenegro",
+                  "-lang": "de"
+                },
+                {
+                  "#text": "Monténégro",
+                  "-lang": "fr"
+                }
+              ]
+            },
+            {
+              "-value": "HR",
+              "Description": [
+                {
+                  "#text": "Croatia",
+                  "-lang": "en"
+                },
+                {
+                  "#text": "Kroatien",
+                  "-lang": "de"
+                },
+                {
+                  "#text": "Croatie",
+                  "-lang": "fr"
+                }
+              ]
+            },
+            {
+              "-value": "MK",
+              "Description": [
+                {
+                  "#text": "Former Yugoslav Republic of Macedonia, the",
+                  "-lang": "en"
+                },
+                {
+                  "#text": "Die ehemalige jugoslawische Republik Mazedonien",
+                  "-lang": "de"
+                },
+                {
+                  "#text": "Ancienne République yougoslave de Macédoine",
+                  "-lang": "fr"
+                }
+              ]
+            },
+            {
+              "-value": "TR",
+              "Description": [
+                {
+                  "#text": "Turkey",
+                  "-lang": "en"
+                },
+                {
+                  "#text": "Türkei",
+                  "-lang": "de"
+                },
+                {
+                  "#text": "Turquie",
+                  "-lang": "fr"
+                }
+              ]
+            }
+          ],
+          "Name": [
+            {
+              "#text": "Geopolitical entity (declaring)",
+              "-lang": "en"
+            },
+            {
+              "#text": "Geopolitische Meldeeinheit",
+              "-lang": "de"
+            },
+            {
+              "#text": "Entité géopolitique (déclarante)",
+              "-lang": "fr"
+            }
+          ]
+        },
+        {
+          "-agencyID": "SDMX",
+          "-id": "CL_TIME_FORMAT",
+          "Code": [
+            {
+              "-value": "P1Y",
+              "Description": {
+                "#text": "Annual",
+                "-lang": "en"
+              }
+            },
+            {
+              "-value": "P6M",
+              "Description": {
+                "#text": "Semi-annual",
+                "-lang": "en"
+              }
+            },
+            {
+              "-value": "P3M",
+              "Description": {
+                "#text": "Quarterly",
+                "-lang": "en"
+              }
+            },
+            {
+              "-value": "P1M",
+              "Description": {
+                "#text": "Monthly",
+                "-lang": "en"
+              }
+            },
+            {
+              "-value": "P7D",
+              "Description": {
+                "#text": "Weekly",
+                "-lang": "en"
+              }
+            },
+            {
+              "-value": "P1D",
+              "Description": {
+                "#text": "Daily",
+                "-lang": "en"
+              }
+            },
+            {
+              "-value": "PT1M",
+              "Description": {
+                "#text": "Minutely",
+                "-lang": "en"
+              }
+            }
+          ],
+          "Name": {
+            "#text": "Time Format",
+            "-lang": "en"
+          }
+        },
+        {
+          "-agencyID": "SDMX",
+          "-id": "CL_FREQ",
+          "Code": [
+            {
+              "-value": "A",
+              "Description": {
+                "#text": "Annual",
+                "-lang": "en"
+              }
+            },
+            {
+              "-value": "S",
+              "Description": {
+                "#text": "Half-yearly, semester",
+                "-lang": "en"
+              }
+            },
+            {
+              "-value": "Q",
+              "Description": {
+                "#text": "Quarterly",
+                "-lang": "en"
+              }
+            },
+            {
+              "-value": "M",
+              "Description": {
+                "#text": "Monthly",
+                "-lang": "en"
+              }
+            },
+            {
+              "-value": "W",
+              "Description": {
+                "#text": "Weekly",
+                "-lang": "en"
+              }
+            },
+            {
+              "-value": "B",
+              "Description": {
+                "#text": "Business week",
+                "-lang": "en"
+              }
+            },
+            {
+              "-value": "D",
+              "Description": {
+                "#text": "Daily",
+                "-lang": "en"
+              }
+            },
+            {
+              "-value": "H",
+              "Description": {
+                "#text": "Hourly",
+                "-lang": "en"
+              }
+            },
+            {
+              "-value": "N",
+              "Description": {
+                "#text": "Minutely",
+                "-lang": "en"
+              }
+            }
+          ],
+          "Name": {
+            "#text": "Frequency code list",
+            "-lang": "en"
+          }
+        },
+        {
+          "-agencyID": "EUROSTAT",
+          "-id": "CL_OBS_STATUS",
+          "-isFinal": "false",
+          "Code": [
+            {
+              "-value": "b",
+              "Description": [
+                {
+                  "#text": "break in series",
+                  "-lang": "en"
+                },
+                {
+                  "#text": "Zeitreihenbruch",
+                  "-lang": "de"
+                },
+                {
+                  "#text": "rupture de série",
+                  "-lang": "fr"
+                }
+              ]
+            },
+            {
+              "-value": "c",
+              "Description": [
+                {
+                  "#text": "confidential",
+                  "-lang": "en"
+                },
+                {
+                  "#text": "vertraulich",
+                  "-lang": "de"
+                },
+                {
+                  "#text": "confidentiel",
+                  "-lang": "fr"
+                }
+              ]
+            },
+            {
+              "-value": "e",
+              "Description": [
+                {
+                  "#text": "estimated",
+                  "-lang": "en"
+                },
+                {
+                  "#text": "geschätzt",
+                  "-lang": "de"
+                },
+                {
+                  "#text": "estimé",
+                  "-lang": "fr"
+                }
+              ]
+            },
+            {
+              "-value": "f",
+              "Description": [
+                {
+                  "#text": "forecast",
+                  "-lang": "en"
+                },
+                {
+                  "#text": "Prognose",
+                  "-lang": "de"
+                },
+                {
+                  "#text": "prévision",
+                  "-lang": "fr"
+                }
+              ]
+            },
+            {
+              "-value": "i",
+              "Description": [
+                {
+                  "#text": "see metadata",
+                  "-lang": "en"
+                },
+                {
+                  "#text": "siehe Metadaten",
+                  "-lang": "de"
+                },
+                {
+                  "#text": "voir métadonnées",
+                  "-lang": "fr"
+                }
+              ]
+            },
+            {
+              "-value": "n",
+              "Description": [
+                {
+                  "#text": "not significant",
+                  "-lang": "en"
+                },
+                {
+                  "#text": "unbedeutend",
+                  "-lang": "de"
+                },
+                {
+                  "#text": "non significatif",
+                  "-lang": "fr"
+                }
+              ]
+            },
+            {
+              "-value": "p",
+              "Description": [
+                {
+                  "#text": "provisional",
+                  "-lang": "en"
+                },
+                {
+                  "#text": "vorläufig",
+                  "-lang": "de"
+                },
+                {
+                  "#text": "provisoire",
+                  "-lang": "fr"
+                }
+              ]
+            },
+            {
+              "-value": "r",
+              "Description": [
+                {
+                  "#text": "revised",
+                  "-lang": "en"
+                },
+                {
+                  "#text": "revidiert",
+                  "-lang": "de"
+                },
+                {
+                  "#text": "révisé",
+                  "-lang": "fr"
+                }
+              ]
+            },
+            {
+              "-value": "s",
+              "Description": [
+                {
+                  "#text": "Eurostat estimate",
+                  "-lang": "en"
+                },
+                {
+                  "#text": "Eurostat Schätzung",
+                  "-lang": "de"
+                },
+                {
+                  "#text": "estimation Eurostat",
+                  "-lang": "fr"
+                }
+              ]
+            },
+            {
+              "-value": "u",
+              "Description": [
+                {
+                  "#text": "unreliable",
+                  "-lang": "en"
+                },
+                {
+                  "#text": "unzuverlässig",
+                  "-lang": "de"
+                },
+                {
+                  "#text": "non fiable",
+                  "-lang": "fr"
+                }
+              ]
+            },
+            {
+              "-value": "z",
+              "Description": [
+                {
+                  "#text": "not applicable (incl. real zero)",
+                  "-lang": "en"
+                },
+                {
+                  "#text": "nicht zutreffend (einschl. reale Null)",
+                  "-lang": "de"
+                },
+                {
+                  "#text": "non applicable (zéro réel inclus)",
+                  "-lang": "fr"
+                }
+              ]
+            }
+          ],
+          "Name": {
+            "#text": "Observation status code list",
+            "-lang": "en"
+          }
+        }
+      ]
+    },
+    "Concepts": {
+      "ConceptScheme": {
+        "-agencyID": "EUROSTAT",
+        "-id": "CONCEPTS",
+        "-isFinal": "true",
+        "Concept": [
+          {
+            "-id": "FREQ",
+            "Name": {
+              "#text": "Frequency",
+              "-lang": "en"
+            }
+          },
+          {
+            "-id": "indic_de",
+            "Name": [
+              {
+                "#text": "Demographic indicator",
+                "-lang": "en"
+              },
+              {
+                "#text": "Demographische Indikator",
+                "-lang": "de"
+              },
+              {
+                "#text": "Indicateur démographique",
+                "-lang": "fr"
+              }
+            ]
+          },
+          {
+            "-id": "geo",
+            "Name": [
+              {
+                "#text": "Geopolitical entity (declaring)",
+                "-lang": "en"
+              },
+              {
+                "#text": "Geopolitische Meldeeinheit",
+                "-lang": "de"
+              },
+              {
+                "#text": "Entité géopolitique (déclarante)",
+                "-lang": "fr"
+              }
+            ]
+          },
+          {
+            "-id": "TIME_PERIOD",
+            "Name": {
+              "#text": "Time period or range",
+              "-lang": "en"
+            }
+          },
+          {
+            "-id": "OBS_VALUE",
+            "Name": {
+              "#text": "Observation Value",
+              "-lang": "en"
+            }
+          },
+          {
+            "-id": "OBS_STATUS",
+            "Name": {
+              "#text": "Observation Status",
+              "-lang": "en"
+            }
+          }
+        ],
+        "Name": {
+          "#text": "Concepts",
+          "-lang": "en"
+        }
+      }
+    },
+    "Header": {
+      "ID": "tps00001_DSD",
+      "Name": {
+        "#text": "tps00001_DSD",
+        "-lang": "en"
+      },
+      "Prepared": "2012-10-19T02:41:26",
+      "Receiver": {
+        "-id": "XML",
+        "Name": {
+          "#text": "XML File",
+          "-lang": "en"
+        }
+      },
+      "Sender": {
+        "-id": "EUROSTAT",
+        "Name": {
+          "#text": "EUROSTAT",
+          "-lang": "en"
+        }
+      },
+      "Test": "false",
+      "Truncated": "false"
+    },
+    "KeyFamilies": {
+      "KeyFamily": {
+        "-agencyID": "EUROSTAT",
+        "-id": "tps00001_DSD",
+        "-isExternalReference": "false",
+        "-isFinal": "false",
+        "Components": {
+          "Attribute": [
+            {
+              "-assignmentStatus": "Mandatory",
+              "-attachmentLevel": "Series",
+              "-codelist": "CL_TIME_FORMAT",
+              "-conceptRef": "TIME_FORMAT",
+              "-conceptSchemeRef": "CONCEPTS"
+            },
+            {
+              "-assignmentStatus": "Conditional",
+              "-attachmentLevel": "Observation",
+              "-codelist": "CL_OBS_STATUS",
+              "-conceptRef": "OBS_STATUS",
+              "-conceptSchemeRef": "CONCEPTS",
+              "-crossSectionalAttachDataSet": "false",
+              "-crossSectionalAttachGroup": "false",
+              "-crossSectionalAttachObservation": "true",
+              "-crossSectionalAttachSection": "false",
+              "TextFormat": {
+                "-textType": "String"
+              }
+            }
+          ],
+          "Dimension": [
+            {
+              "-codelist": "CL_FREQ",
+              "-conceptRef": "FREQ",
+              "-conceptSchemeRef": "CONCEPTS",
+              "-isFrequencyDimension": "true"
+            },
+            {
+              "-codelist": "CL_INDIC_DE",
+              "-conceptRef": "indic_de",
+              "-conceptSchemeRef": "CONCEPTS",
+              "-crossSectionalAttachDataSet": "false",
+              "-crossSectionalAttachGroup": "false",
+              "-crossSectionalAttachObservation": "false",
+              "-crossSectionalAttachSection": "true"
+            },
+            {
+              "-codelist": "CL_GEO",
+              "-conceptRef": "geo",
+              "-conceptSchemeRef": "CONCEPTS",
+              "-crossSectionalAttachDataSet": "false",
+              "-crossSectionalAttachGroup": "false",
+              "-crossSectionalAttachObservation": "false",
+              "-crossSectionalAttachSection": "true"
+            }
+          ],
+          "PrimaryMeasure": {
+            "-conceptRef": "OBS_VALUE",
+            "-conceptSchemeRef": "CONCEPTS",
+            "TextFormat": {
+              "-textType": "Double"
+            }
+          },
+          "TimeDimension": {
+            "-conceptRef": "TIME_PERIOD",
+            "-conceptSchemeRef": "CONCEPTS",
+            "TextFormat": {
+              "-textType": "String"
+            }
+          }
+        },
+        "Name": {
+          "#text": "tps00001_DSD",
+          "-lang": "en"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,461 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Wb",
+    "definitions": {
+        "Wb": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "Structure": {
+                    "$ref": "#/definitions/Structure"
+                }
+            },
+            "required": [
+                "Structure"
+            ],
+            "title": "Wb"
+        },
+        "Structure": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "-common": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "http"
+                    ],
+                    "qt-uri-extensions": [
+                        ".xsd"
+                    ]
+                },
+                "-compact": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "http"
+                    ],
+                    "qt-uri-extensions": [
+                        ".xsd"
+                    ]
+                },
+                "-cross": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "http"
+                    ],
+                    "qt-uri-extensions": [
+                        ".xsd"
+                    ]
+                },
+                "-generic": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "http"
+                    ],
+                    "qt-uri-extensions": [
+                        ".xsd"
+                    ]
+                },
+                "-query": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "http"
+                    ],
+                    "qt-uri-extensions": [
+                        ".xsd"
+                    ]
+                },
+                "-schemaLocation": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "http"
+                    ],
+                    "qt-uri-extensions": [
+                        ".xsd"
+                    ]
+                },
+                "-structure": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "http"
+                    ],
+                    "qt-uri-extensions": [
+                        ".xsd"
+                    ]
+                },
+                "-utility": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "http"
+                    ],
+                    "qt-uri-extensions": [
+                        ".xsd"
+                    ]
+                },
+                "-xmlns": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "http"
+                    ],
+                    "qt-uri-extensions": [
+                        ".xsd"
+                    ]
+                },
+                "-xsi": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "http"
+                    ],
+                    "qt-uri-extensions": [
+                        ".xsd"
+                    ]
+                },
+                "CodeLists": {
+                    "$ref": "#/definitions/CodeLists"
+                },
+                "Concepts": {
+                    "$ref": "#/definitions/Concepts"
+                },
+                "Header": {
+                    "$ref": "#/definitions/Header"
+                },
+                "KeyFamilies": {
+                    "$ref": "#/definitions/KeyFamilies"
+                }
+            },
+            "required": [
+                "-common",
+                "-compact",
+                "-cross",
+                "-generic",
+                "-query",
+                "-schemaLocation",
+                "-structure",
+                "-utility",
+                "-xmlns",
+                "-xsi",
+                "CodeLists",
+                "Concepts",
+                "Header",
+                "KeyFamilies"
+            ],
+            "title": "Structure"
+        },
+        "CodeLists": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "CodeList": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/KeyFamily"
+                    }
+                }
+            },
+            "required": [
+                "CodeList"
+            ],
+            "title": "CodeLists"
+        },
+        "KeyFamily": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "-agencyID": {
+                    "$ref": "#/definitions/ID"
+                },
+                "-id": {
+                    "type": "string"
+                },
+                "-version": {
+                    "type": "string"
+                },
+                "Code": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Code"
+                    }
+                },
+                "Name": {
+                    "$ref": "#/definitions/DescriptionClass"
+                },
+                "Description": {
+                    "$ref": "#/definitions/DescriptionClass"
+                },
+                "Components": {
+                    "$ref": "#/definitions/Components"
+                }
+            },
+            "required": [
+                "-agencyID",
+                "-id",
+                "-version",
+                "Name"
+            ],
+            "title": "KeyFamily"
+        },
+        "Code": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "-value": {
+                    "type": "string"
+                },
+                "Description": {
+                    "$ref": "#/definitions/DescriptionClass"
+                }
+            },
+            "required": [
+                "-value",
+                "Description"
+            ],
+            "title": "Code"
+        },
+        "DescriptionClass": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "#text": {
+                    "type": "string"
+                },
+                "-lang": {
+                    "$ref": "#/definitions/Lang"
+                }
+            },
+            "required": [
+                "#text",
+                "-lang"
+            ],
+            "title": "DescriptionClass"
+        },
+        "Components": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "Attribute": {
+                    "$ref": "#/definitions/Attribute"
+                },
+                "Dimension": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Dimension"
+                    }
+                },
+                "PrimaryMeasure": {
+                    "$ref": "#/definitions/PrimaryMeasure"
+                },
+                "TimeDimension": {
+                    "$ref": "#/definitions/PrimaryMeasure"
+                }
+            },
+            "required": [
+                "Attribute",
+                "Dimension",
+                "PrimaryMeasure",
+                "TimeDimension"
+            ],
+            "title": "Components"
+        },
+        "Attribute": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "-assignmentStatus": {
+                    "type": "string"
+                },
+                "-attachmentLevel": {
+                    "type": "string"
+                },
+                "-codelist": {
+                    "type": "string"
+                },
+                "-conceptRef": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "-assignmentStatus",
+                "-attachmentLevel",
+                "-codelist",
+                "-conceptRef"
+            ],
+            "title": "Attribute"
+        },
+        "Dimension": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "-codelist": {
+                    "type": "string"
+                },
+                "-conceptRef": {
+                    "type": "string"
+                },
+                "-isFrequencyDimension": {
+                    "type": "string",
+                    "format": "boolean"
+                }
+            },
+            "required": [
+                "-codelist",
+                "-conceptRef"
+            ],
+            "title": "Dimension"
+        },
+        "PrimaryMeasure": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "-conceptRef": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "-conceptRef"
+            ],
+            "title": "PrimaryMeasure"
+        },
+        "Concepts": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "Concept": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/KeyFamily"
+                    }
+                }
+            },
+            "required": [
+                "Concept"
+            ],
+            "title": "Concepts"
+        },
+        "Header": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "ID": {
+                    "type": "string"
+                },
+                "Name": {
+                    "$ref": "#/definitions/DescriptionClass"
+                },
+                "Prepared": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "Sender": {
+                    "$ref": "#/definitions/Sender"
+                }
+            },
+            "required": [
+                "ID",
+                "Name",
+                "Prepared",
+                "Sender"
+            ],
+            "title": "Header"
+        },
+        "Sender": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "-id": {
+                    "$ref": "#/definitions/ID"
+                },
+                "Contact": {
+                    "$ref": "#/definitions/Contact"
+                },
+                "Name": {
+                    "$ref": "#/definitions/DescriptionClass"
+                }
+            },
+            "required": [
+                "-id",
+                "Contact",
+                "Name"
+            ],
+            "title": "Sender"
+        },
+        "Contact": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "Department": {
+                    "$ref": "#/definitions/DescriptionClass"
+                },
+                "Email": {
+                    "type": "string"
+                },
+                "Name": {
+                    "$ref": "#/definitions/RoleClass"
+                },
+                "Role": {
+                    "$ref": "#/definitions/RoleClass"
+                },
+                "Telephone": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "Department",
+                "Email",
+                "Name",
+                "Role",
+                "Telephone"
+            ],
+            "title": "Contact"
+        },
+        "RoleClass": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "-lang": {
+                    "$ref": "#/definitions/Lang"
+                }
+            },
+            "required": [
+                "-lang"
+            ],
+            "title": "RoleClass"
+        },
+        "KeyFamilies": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "KeyFamily": {
+                    "$ref": "#/definitions/KeyFamily"
+                }
+            },
+            "required": [
+                "KeyFamily"
+            ],
+            "title": "KeyFamilies"
+        },
+        "ID": {
+            "type": "string",
+            "enum": [
+                "WB",
+                "IAEG"
+            ],
+            "title": "ID"
+        },
+        "Lang": {
+            "type": "string",
+            "enum": [
+                "en"
+            ],
+            "title": "Lang"
+        }
+    }
+}

@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-         xmlns:owl="http://www.w3.org/2002/07/owl#"
-         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-         xmlns:dcterms="http://purl.org/dc/terms/"
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/"
+         xmlns:sdmx-measure="http://purl.org/linked-data/sdmx/2009/measure#"
          xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:sdmx-metadata="http://purl.org/linked-data/sdmx/2009/metadata#"
          xmlns:prov="http://www.w3.org/ns/prov#"
+         xmlns:sdmx-subject="http://purl.org/linked-data/sdmx/2009/subject#"
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
          xmlns:xkos="http://purl.org/linked-data/xkos#"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xmlns:qb="http://purl.org/linked-data/cube#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:sdmx="http://purl.org/linked-data/sdmx#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:sdmx-attribute="http://purl.org/linked-data/sdmx/2009/attribute#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
          xmlns:sdmx-code="http://purl.org/linked-data/sdmx/2009/code#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
          xmlns:sdmx-concept="http://purl.org/linked-data/sdmx/2009/concept#"
          xmlns:sdmx-dimension="http://purl.org/linked-data/sdmx/2009/dimension#"
-         xmlns:sdmx-measure="http://purl.org/linked-data/sdmx/2009/measure#"
-         xmlns:sdmx-metadata="http://purl.org/linked-data/sdmx/2009/metadata#"
-         xmlns:sdmx-subject="http://purl.org/linked-data/sdmx/2009/subject#"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xmlns:d-8816="http://wb.270a.info/dimension/1.0 1.0 1.0 1.0 1.0/"
-         xmlns:d-8818="http://wb.270a.info/dimension/1.0 1.0 1.0 1.0 1.0/"
-         xmlns:d-8820="http://wb.270a.info/dimension/1.0 1.0 1.0 1.0 1.0/"
-         xmlns:d-8822="http://wb.270a.info/dimension/1.0 1.0 1.0 1.0 1.0/"
-         xmlns:m-8825="http://iaeg.270a.info/measure/1.0/"
-         xmlns:a-8828="http://wb.270a.info/attribute/1.0 1.0 1.0 1.0 1.0/"
+         xmlns:d-2864="http://wb.270a.info/dimension/1.0 1.0 1.0 1.0 1.0/"
+         xmlns:d-2865="http://wb.270a.info/dimension/1.0 1.0 1.0 1.0 1.0/"
+         xmlns:d-2866="http://wb.270a.info/dimension/1.0 1.0 1.0 1.0 1.0/"
+         xmlns:d-2867="http://wb.270a.info/dimension/1.0 1.0 1.0 1.0 1.0/"
+         xmlns:m-2868="http://iaeg.270a.info/measure/1.0/"
+         xmlns:a-2869="http://wb.270a.info/attribute/1.0 1.0 1.0 1.0 1.0/"
          xml:base="https://data.loqu.dev/WB/">
-   <rdf:Description rdf:about="provenance/activity/20210329193305">
+   <rdf:Description rdf:about="provenance/activity/20210330013955">
       <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
       <rdfs:label xml:lang="en">Transformed WDI data</rdfs:label>
-      <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-29T19:33:05Z</prov:startedAtTime>
+      <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-30T01:39:55Z</prov:startedAtTime>
       <prov:wasStartedBy rdf:resource="http://csarven.ca/#i"/>
       <prov:wasAssociatedWith rdf:resource="https://github.com/csarven/linked-sdmx"/>
       <prov:qualifiedAssociation rdf:resource="http://csarven.ca/linked-sdmx-data"/>
@@ -41,18 +41,18 @@
          <rdf:Description>
             <rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
             <prov:entity rdf:resource="http://example.org/data/WB.KeyFamily.xml"/>
-            <prov:atTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-29T19:33:05Z</prov:atTime>
+            <prov:atTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-30T01:39:55Z</prov:atTime>
          </rdf:Description>
       </prov:qualifiedUsage>
       <prov:generated>
          <rdf:Description rdf:about="http://wb.270a.info/structure/1.0/WDI">
             <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
             <prov:wasAttributedTo rdf:resource="http://csarven.ca/#i"/>
-            <prov:generatedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-29T19:33:05Z</prov:generatedAtTime>
+            <prov:generatedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-30T01:39:55Z</prov:generatedAtTime>
             <prov:wasDerivedFrom rdf:resource="http://example.org/data/WB.KeyFamily.xml"/>
-            <prov:wasGeneratedBy rdf:resource="provenance/activity/20210329193305"/>
+            <prov:wasGeneratedBy rdf:resource="provenance/activity/20210330013955"/>
             <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
-            <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-29T19:33:05Z</dcterms:issued>
+            <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-30T01:39:55Z</dcterms:issued>
             <dcterms:creator rdf:resource="http://csarven.ca/#i"/>
          </rdf:Description>
       </prov:generated>
@@ -239,10 +239,10 @@
       <skos:prefLabel xml:lang="en">Observation Value</skos:prefLabel>
       <skos:definition xml:lang="en">Observation value</skos:definition>
    </rdf:Description>
-   <rdf:Description rdf:about="provenance/activity/20210329193305">
+   <rdf:Description rdf:about="provenance/activity/20210330013955">
       <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
       <rdfs:label xml:lang="en">Transformed CL_FREQ_WDI data</rdfs:label>
-      <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-29T19:33:05Z</prov:startedAtTime>
+      <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-30T01:39:55Z</prov:startedAtTime>
       <prov:wasStartedBy rdf:resource="http://csarven.ca/#i"/>
       <prov:wasAssociatedWith rdf:resource="https://github.com/csarven/linked-sdmx"/>
       <prov:qualifiedAssociation rdf:resource="http://csarven.ca/linked-sdmx-data"/>
@@ -255,18 +255,18 @@
          <rdf:Description>
             <rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
             <prov:entity rdf:resource="http://example.org/data/WB.KeyFamily.xml"/>
-            <prov:atTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-29T19:33:05Z</prov:atTime>
+            <prov:atTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-30T01:39:55Z</prov:atTime>
          </rdf:Description>
       </prov:qualifiedUsage>
       <prov:generated>
          <rdf:Description rdf:about="http://wb.270a.info/code/1.0/CL_FREQ_WDI">
             <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
             <prov:wasAttributedTo rdf:resource="http://csarven.ca/#i"/>
-            <prov:generatedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-29T19:33:05Z</prov:generatedAtTime>
+            <prov:generatedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-30T01:39:55Z</prov:generatedAtTime>
             <prov:wasDerivedFrom rdf:resource="http://example.org/data/WB.KeyFamily.xml"/>
-            <prov:wasGeneratedBy rdf:resource="provenance/activity/20210329193305"/>
+            <prov:wasGeneratedBy rdf:resource="provenance/activity/20210330013955"/>
             <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
-            <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-29T19:33:05Z</dcterms:issued>
+            <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-30T01:39:55Z</dcterms:issued>
             <dcterms:creator rdf:resource="http://csarven.ca/#i"/>
          </rdf:Description>
       </prov:generated>
@@ -353,10 +353,10 @@
          </rdf:Description>
       </skos:hasTopConcept>
    </rdf:Description>
-   <rdf:Description rdf:about="provenance/activity/20210329193305">
+   <rdf:Description rdf:about="provenance/activity/20210330013955">
       <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
       <rdfs:label xml:lang="en">Transformed CL_REF_AREA_WDI data</rdfs:label>
-      <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-29T19:33:05Z</prov:startedAtTime>
+      <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-30T01:39:55Z</prov:startedAtTime>
       <prov:wasStartedBy rdf:resource="http://csarven.ca/#i"/>
       <prov:wasAssociatedWith rdf:resource="https://github.com/csarven/linked-sdmx"/>
       <prov:qualifiedAssociation rdf:resource="http://csarven.ca/linked-sdmx-data"/>
@@ -369,18 +369,18 @@
          <rdf:Description>
             <rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
             <prov:entity rdf:resource="http://example.org/data/WB.KeyFamily.xml"/>
-            <prov:atTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-29T19:33:05Z</prov:atTime>
+            <prov:atTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-30T01:39:55Z</prov:atTime>
          </rdf:Description>
       </prov:qualifiedUsage>
       <prov:generated>
          <rdf:Description rdf:about="http://wb.270a.info/code/1.0/CL_REF_AREA_WDI">
             <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
             <prov:wasAttributedTo rdf:resource="http://csarven.ca/#i"/>
-            <prov:generatedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-29T19:33:05Z</prov:generatedAtTime>
+            <prov:generatedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-30T01:39:55Z</prov:generatedAtTime>
             <prov:wasDerivedFrom rdf:resource="http://example.org/data/WB.KeyFamily.xml"/>
-            <prov:wasGeneratedBy rdf:resource="provenance/activity/20210329193305"/>
+            <prov:wasGeneratedBy rdf:resource="provenance/activity/20210330013955"/>
             <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
-            <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-29T19:33:05Z</dcterms:issued>
+            <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-30T01:39:55Z</dcterms:issued>
             <dcterms:creator rdf:resource="http://csarven.ca/#i"/>
          </rdf:Description>
       </prov:generated>
@@ -3008,10 +3008,10 @@
          </rdf:Description>
       </skos:hasTopConcept>
    </rdf:Description>
-   <rdf:Description rdf:about="provenance/activity/20210329193305">
+   <rdf:Description rdf:about="provenance/activity/20210330013955">
       <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
       <rdfs:label xml:lang="en">Transformed CL_SERIES_WDI data</rdfs:label>
-      <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-29T19:33:05Z</prov:startedAtTime>
+      <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-30T01:39:55Z</prov:startedAtTime>
       <prov:wasStartedBy rdf:resource="http://csarven.ca/#i"/>
       <prov:wasAssociatedWith rdf:resource="https://github.com/csarven/linked-sdmx"/>
       <prov:qualifiedAssociation rdf:resource="http://csarven.ca/linked-sdmx-data"/>
@@ -3024,18 +3024,18 @@
          <rdf:Description>
             <rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
             <prov:entity rdf:resource="http://example.org/data/WB.KeyFamily.xml"/>
-            <prov:atTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-29T19:33:05Z</prov:atTime>
+            <prov:atTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-30T01:39:55Z</prov:atTime>
          </rdf:Description>
       </prov:qualifiedUsage>
       <prov:generated>
          <rdf:Description rdf:about="http://wb.270a.info/code/1.0/CL_SERIES_WDI">
             <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
             <prov:wasAttributedTo rdf:resource="http://csarven.ca/#i"/>
-            <prov:generatedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-29T19:33:05Z</prov:generatedAtTime>
+            <prov:generatedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-30T01:39:55Z</prov:generatedAtTime>
             <prov:wasDerivedFrom rdf:resource="http://example.org/data/WB.KeyFamily.xml"/>
-            <prov:wasGeneratedBy rdf:resource="provenance/activity/20210329193305"/>
+            <prov:wasGeneratedBy rdf:resource="provenance/activity/20210330013955"/>
             <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
-            <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-29T19:33:05Z</dcterms:issued>
+            <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-30T01:39:55Z</dcterms:issued>
             <dcterms:creator rdf:resource="http://csarven.ca/#i"/>
          </rdf:Description>
       </prov:generated>
@@ -15794,10 +15794,10 @@
          </rdf:Description>
       </skos:hasTopConcept>
    </rdf:Description>
-   <rdf:Description rdf:about="provenance/activity/20210329193305">
+   <rdf:Description rdf:about="provenance/activity/20210330013955">
       <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
       <rdfs:label xml:lang="en">Transformed CL_UNIT_MULT_WDI data</rdfs:label>
-      <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-29T19:33:05Z</prov:startedAtTime>
+      <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-30T01:39:55Z</prov:startedAtTime>
       <prov:wasStartedBy rdf:resource="http://csarven.ca/#i"/>
       <prov:wasAssociatedWith rdf:resource="https://github.com/csarven/linked-sdmx"/>
       <prov:qualifiedAssociation rdf:resource="http://csarven.ca/linked-sdmx-data"/>
@@ -15810,18 +15810,18 @@
          <rdf:Description>
             <rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
             <prov:entity rdf:resource="http://example.org/data/WB.KeyFamily.xml"/>
-            <prov:atTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-29T19:33:05Z</prov:atTime>
+            <prov:atTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-30T01:39:55Z</prov:atTime>
          </rdf:Description>
       </prov:qualifiedUsage>
       <prov:generated>
          <rdf:Description rdf:about="http://wb.270a.info/code/1.0/CL_UNIT_MULT_WDI">
             <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
             <prov:wasAttributedTo rdf:resource="http://csarven.ca/#i"/>
-            <prov:generatedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-29T19:33:05Z</prov:generatedAtTime>
+            <prov:generatedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-30T01:39:55Z</prov:generatedAtTime>
             <prov:wasDerivedFrom rdf:resource="http://example.org/data/WB.KeyFamily.xml"/>
-            <prov:wasGeneratedBy rdf:resource="provenance/activity/20210329193305"/>
+            <prov:wasGeneratedBy rdf:resource="provenance/activity/20210330013955"/>
             <dcterms:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
-            <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-29T19:33:05Z</dcterms:issued>
+            <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-03-30T01:39:55Z</dcterms:issued>
             <dcterms:creator rdf:resource="http://csarven.ca/#i"/>
          </rdf:Description>
       </prov:generated>

@@ -1,0 +1,612 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Eurostat",
+    "definitions": {
+        "Eurostat": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "Structure": {
+                    "$ref": "#/definitions/Structure"
+                }
+            },
+            "required": [
+                "Structure"
+            ],
+            "title": "Eurostat"
+        },
+        "Structure": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "-common": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "http"
+                    ],
+                    "qt-uri-extensions": [
+                        ".xsd"
+                    ]
+                },
+                "-compact": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "http"
+                    ],
+                    "qt-uri-extensions": [
+                        ".xsd"
+                    ]
+                },
+                "-cross": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "http"
+                    ],
+                    "qt-uri-extensions": [
+                        ".xsd"
+                    ]
+                },
+                "-generic": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "http"
+                    ],
+                    "qt-uri-extensions": [
+                        ".xsd"
+                    ]
+                },
+                "-query": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "http"
+                    ],
+                    "qt-uri-extensions": [
+                        ".xsd"
+                    ]
+                },
+                "-schemaLocation": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "http"
+                    ],
+                    "qt-uri-extensions": [
+                        ".xsd"
+                    ]
+                },
+                "-structure": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "http"
+                    ],
+                    "qt-uri-extensions": [
+                        ".xsd"
+                    ]
+                },
+                "-utility": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "http"
+                    ],
+                    "qt-uri-extensions": [
+                        ".xsd"
+                    ]
+                },
+                "-xmlns": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "http"
+                    ],
+                    "qt-uri-extensions": [
+                        ".xsd"
+                    ]
+                },
+                "-xsi": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "http"
+                    ],
+                    "qt-uri-extensions": [
+                        ".xsd"
+                    ]
+                },
+                "CodeLists": {
+                    "$ref": "#/definitions/CodeLists"
+                },
+                "Concepts": {
+                    "$ref": "#/definitions/Concepts"
+                },
+                "Header": {
+                    "$ref": "#/definitions/Header"
+                },
+                "KeyFamilies": {
+                    "$ref": "#/definitions/KeyFamilies"
+                }
+            },
+            "required": [
+                "-common",
+                "-compact",
+                "-cross",
+                "-generic",
+                "-query",
+                "-schemaLocation",
+                "-structure",
+                "-utility",
+                "-xmlns",
+                "-xsi",
+                "CodeLists",
+                "Concepts",
+                "Header",
+                "KeyFamilies"
+            ],
+            "title": "Structure"
+        },
+        "CodeLists": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "CodeList": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/CodeList"
+                    }
+                }
+            },
+            "required": [
+                "CodeList"
+            ],
+            "title": "CodeLists"
+        },
+        "CodeList": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "-agencyID": {
+                    "type": "string"
+                },
+                "-id": {
+                    "type": "string"
+                },
+                "-isFinal": {
+                    "type": "string",
+                    "format": "boolean"
+                },
+                "Code": {
+                    "$ref": "#/definitions/CodeUnion"
+                },
+                "Name": {
+                    "$ref": "#/definitions/NameUnion"
+                }
+            },
+            "required": [
+                "-agencyID",
+                "-id",
+                "Code",
+                "Name"
+            ],
+            "title": "CodeList"
+        },
+        "CodeElement": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "-value": {
+                    "type": "string"
+                },
+                "Description": {
+                    "$ref": "#/definitions/NameUnion"
+                }
+            },
+            "required": [
+                "-value",
+                "Description"
+            ],
+            "title": "CodeElement"
+        },
+        "PurpleCode": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "-value": {
+                    "type": "string"
+                },
+                "Description": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/NameElement"
+                    }
+                }
+            },
+            "required": [
+                "-value",
+                "Description"
+            ],
+            "title": "PurpleCode"
+        },
+        "NameElement": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "#text": {
+                    "type": "string"
+                },
+                "-lang": {
+                    "$ref": "#/definitions/Lang"
+                }
+            },
+            "required": [
+                "#text",
+                "-lang"
+            ],
+            "title": "NameElement"
+        },
+        "Concepts": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "ConceptScheme": {
+                    "$ref": "#/definitions/ConceptScheme"
+                }
+            },
+            "required": [
+                "ConceptScheme"
+            ],
+            "title": "Concepts"
+        },
+        "ConceptScheme": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "-agencyID": {
+                    "type": "string"
+                },
+                "-id": {
+                    "type": "string"
+                },
+                "-isFinal": {
+                    "type": "string",
+                    "format": "boolean"
+                },
+                "Concept": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Concept"
+                    }
+                },
+                "Name": {
+                    "$ref": "#/definitions/NameElement"
+                }
+            },
+            "required": [
+                "-agencyID",
+                "-id",
+                "-isFinal",
+                "Concept",
+                "Name"
+            ],
+            "title": "ConceptScheme"
+        },
+        "Concept": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "-id": {
+                    "type": "string"
+                },
+                "Name": {
+                    "$ref": "#/definitions/NameUnion"
+                }
+            },
+            "required": [
+                "-id",
+                "Name"
+            ],
+            "title": "Concept"
+        },
+        "Header": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "ID": {
+                    "type": "string"
+                },
+                "Name": {
+                    "$ref": "#/definitions/NameElement"
+                },
+                "Prepared": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "Receiver": {
+                    "$ref": "#/definitions/Receiver"
+                },
+                "Sender": {
+                    "$ref": "#/definitions/Receiver"
+                },
+                "Test": {
+                    "type": "string",
+                    "format": "boolean"
+                },
+                "Truncated": {
+                    "type": "string",
+                    "format": "boolean"
+                }
+            },
+            "required": [
+                "ID",
+                "Name",
+                "Prepared",
+                "Receiver",
+                "Sender",
+                "Test",
+                "Truncated"
+            ],
+            "title": "Header"
+        },
+        "Receiver": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "-id": {
+                    "type": "string"
+                },
+                "Name": {
+                    "$ref": "#/definitions/NameElement"
+                }
+            },
+            "required": [
+                "-id",
+                "Name"
+            ],
+            "title": "Receiver"
+        },
+        "KeyFamilies": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "KeyFamily": {
+                    "$ref": "#/definitions/KeyFamily"
+                }
+            },
+            "required": [
+                "KeyFamily"
+            ],
+            "title": "KeyFamilies"
+        },
+        "KeyFamily": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "-agencyID": {
+                    "type": "string"
+                },
+                "-id": {
+                    "type": "string"
+                },
+                "-isExternalReference": {
+                    "type": "string",
+                    "format": "boolean"
+                },
+                "-isFinal": {
+                    "type": "string",
+                    "format": "boolean"
+                },
+                "Components": {
+                    "$ref": "#/definitions/Components"
+                },
+                "Name": {
+                    "$ref": "#/definitions/NameElement"
+                }
+            },
+            "required": [
+                "-agencyID",
+                "-id",
+                "-isExternalReference",
+                "-isFinal",
+                "Components",
+                "Name"
+            ],
+            "title": "KeyFamily"
+        },
+        "Components": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "Attribute": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Attribute"
+                    }
+                },
+                "Dimension": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Dimension"
+                    }
+                },
+                "PrimaryMeasure": {
+                    "$ref": "#/definitions/PrimaryMeasure"
+                },
+                "TimeDimension": {
+                    "$ref": "#/definitions/PrimaryMeasure"
+                }
+            },
+            "required": [
+                "Attribute",
+                "Dimension",
+                "PrimaryMeasure",
+                "TimeDimension"
+            ],
+            "title": "Components"
+        },
+        "Attribute": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "-assignmentStatus": {
+                    "type": "string"
+                },
+                "-attachmentLevel": {
+                    "type": "string"
+                },
+                "-codelist": {
+                    "type": "string"
+                },
+                "-conceptRef": {
+                    "type": "string"
+                },
+                "-conceptSchemeRef": {
+                    "type": "string"
+                },
+                "-crossSectionalAttachDataSet": {
+                    "type": "string",
+                    "format": "boolean"
+                },
+                "-crossSectionalAttachGroup": {
+                    "type": "string",
+                    "format": "boolean"
+                },
+                "-crossSectionalAttachObservation": {
+                    "type": "string",
+                    "format": "boolean"
+                },
+                "-crossSectionalAttachSection": {
+                    "type": "string",
+                    "format": "boolean"
+                },
+                "TextFormat": {
+                    "$ref": "#/definitions/TextFormat"
+                }
+            },
+            "required": [
+                "-assignmentStatus",
+                "-attachmentLevel",
+                "-codelist",
+                "-conceptRef",
+                "-conceptSchemeRef"
+            ],
+            "title": "Attribute"
+        },
+        "TextFormat": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "-textType": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "-textType"
+            ],
+            "title": "TextFormat"
+        },
+        "Dimension": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "-codelist": {
+                    "type": "string"
+                },
+                "-conceptRef": {
+                    "type": "string"
+                },
+                "-conceptSchemeRef": {
+                    "type": "string"
+                },
+                "-isFrequencyDimension": {
+                    "type": "string",
+                    "format": "boolean"
+                },
+                "-crossSectionalAttachDataSet": {
+                    "type": "string",
+                    "format": "boolean"
+                },
+                "-crossSectionalAttachGroup": {
+                    "type": "string",
+                    "format": "boolean"
+                },
+                "-crossSectionalAttachObservation": {
+                    "type": "string",
+                    "format": "boolean"
+                },
+                "-crossSectionalAttachSection": {
+                    "type": "string",
+                    "format": "boolean"
+                }
+            },
+            "required": [
+                "-codelist",
+                "-conceptRef",
+                "-conceptSchemeRef"
+            ],
+            "title": "Dimension"
+        },
+        "PrimaryMeasure": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "-conceptRef": {
+                    "type": "string"
+                },
+                "-conceptSchemeRef": {
+                    "type": "string"
+                },
+                "TextFormat": {
+                    "$ref": "#/definitions/TextFormat"
+                }
+            },
+            "required": [
+                "-conceptRef",
+                "-conceptSchemeRef",
+                "TextFormat"
+            ],
+            "title": "PrimaryMeasure"
+        },
+        "CodeUnion": {
+            "anyOf": [
+                {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/CodeElement"
+                    }
+                },
+                {
+                    "$ref": "#/definitions/PurpleCode"
+                }
+            ],
+            "title": "CodeUnion"
+        },
+        "NameUnion": {
+            "anyOf": [
+                {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/NameElement"
+                    }
+                },
+                {
+                    "$ref": "#/definitions/NameElement"
+                }
+            ],
+            "title": "NameUnion"
+        },
+        "Lang": {
+            "type": "string",
+            "enum": [
+                "en",
+                "de",
+                "fr"
+            ],
+            "title": "Lang"
+        }
+    }
+}
